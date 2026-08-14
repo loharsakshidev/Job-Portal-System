@@ -1,0 +1,50 @@
+
+
+
+
+.dashboard-card{
+    transition:.35s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 18px 40px rgba(37,99,235,.35) !important;
+}
+
+body.dark-mode .dashboard-card:hover{
+    box-shadow:
+        0 0 12px rgba(34,211,238,.5),
+        0 0 28px rgba(34,211,238,.35),
+        0 20px 40px rgba(0,0,0,.6) !important;
+}
+
+/* Quick Action Cards */
+
+.quick-card{
+    transition:all .35s ease;
+}
+
+.quick-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+        0 18px 40px rgba(37,99,235,.35) !important;
+}
+
+/* Dark Mode */
+
+body.dark-mode .quick-card{
+    border:1px solid rgba(34,211,238,.18);
+}
+
+body.dark-mode .quick-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 0 12px rgba(34,211,238,.45),
+        0 0 30px rgba(34,211,238,.30),
+        0 20px 40px rgba(0,0,0,.65) !important;
+
+    border-color:#22D3EE;
+
+}

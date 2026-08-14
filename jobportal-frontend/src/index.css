@@ -1,0 +1,397 @@
+/* ==========================================
+   JOBSPHERE THEME COLORS
+========================================== */
+
+:root{
+
+    --primary:#06B6D4;
+    --primary-hover:#22D3EE;
+
+    --navy:#0F172A;
+    --navy-light:#1E293B;
+
+    --card:#1E293B;
+
+    --text:#F8FAFC;
+    --text-secondary:#CBD5E1;
+
+    --border:#334155;
+
+    --success:#22C55E;
+    --warning:#FACC15;
+    --danger:#EF4444;
+
+    --shadow:0 12px 30px rgba(6,182,212,.18);
+
+}
+
+/* ==========================================
+            GLOBAL COMPONENTS
+========================================== */
+
+/* Applied Jobs */
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12)!important;
+}
+
+.badge{
+    padding:10px 18px;
+    border-radius:20px;
+}
+
+.btn-outline-primary{
+    border-radius:50px;
+}
+
+.btn-outline-primary:hover{
+    transform:translateY(-2px);
+}
+
+/* ==========================================
+            GLOBAL DARK MODE
+========================================== */
+
+body.dark-mode{
+
+    background:#16213A !important;
+
+    color:#F8FAFC !important;
+
+}
+
+/* ---------- Background ---------- */
+
+body.dark-mode .container,
+body.dark-mode .container-fluid{
+    background:transparent;
+}
+
+/* ---------- Typography ---------- */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode strong,
+body.dark-mode small,
+body.dark-mode label{
+    color:#F8FAFC !important;
+}
+
+body.dark-mode .text-muted,
+body.dark-mode .text-secondary{
+    color:#CBD5E1 !important;
+}
+
+/* ---------- Navbar & Footer ---------- */
+
+body.dark-mode .navbar-custom,
+body.dark-mode footer{
+
+    background:#1A2742 !important;
+
+    border-bottom:1px solid rgba(34,211,238,.15);
+
+}
+
+body.dark-mode footer{
+
+    border-top:1px solid rgba(34,211,238,.15);
+
+}
+
+/*--body.dark-mode footer{
+    color:#F8FAFC;
+}*/
+
+/* ---------- Cards ---------- */
+
+body.dark-mode .card,
+body.dark-mode .custom-card{
+    background:#243552 !important;
+    color:#F8FAFC !important;
+    border:1px solid rgba(34,211,238,.12);
+}
+
+body.dark-mode .card-header{
+    color:#F8FAFC !important;
+}
+
+/* ---------- Forms ---------- */
+
+body.dark-mode .form-control,
+body.dark-mode .form-select{
+    background:#2B3F60;
+    color:#F8FAFC !important;
+    border:1px solid #475569;
+}
+
+body.dark-mode .form-control::placeholder{
+    color:#CBD5E1 !important;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus{
+    background:#334155 !important;
+    color:#F8FAFC !important;
+    border-color:#22D3EE;
+    box-shadow:0 0 0 .2rem rgba(34,211,238,.15);
+}
+
+body.dark-mode .input-group-text{
+    background:#334155 !important;
+    color:#F8FAFC !important;
+    border-color:#475569;
+}
+
+/* ---------- Tables ---------- */
+
+body.dark-mode .table{
+    color:#F8FAFC !important;
+}
+
+body.dark-mode .table thead th{
+    background:#243552;
+    color:#FFFFFF !important;
+}
+
+body.dark-mode .table tbody tr{
+    background:#16213A;
+}
+
+body.dark-mode .table tbody td{
+    background:#0F172A !important;
+    color:#F8FAFC !important;
+}
+
+body.dark-mode .table tbody td *{
+    color:inherit !important;
+}
+
+body.dark-mode .table-hover tbody tr:hover td{
+    background:#1E293B !important;
+    color:#FFFFFF !important;
+}
+
+/* ---------- Dropdown ---------- */
+
+body.dark-mode .dropdown-menu{
+    background:#243552;
+    background:#2E456A;
+}
+
+body.dark-mode .dropdown-item{
+    color:#F8FAFC;
+}
+
+body.dark-mode .dropdown-item:hover{
+    background:#2E456A;
+}
+
+/* ---------- Alerts ---------- */
+
+body.dark-mode .alert{
+    background:#243552;
+    color:#F8FAFC;
+    border:none;
+}
+
+/* ---------- Modal ---------- */
+
+body.dark-mode .modal-content{
+    background:#243552;
+    color:#F8FAFC;
+}
+
+/* ---------- Links ---------- */
+
+body.dark-mode a{
+    color:#67E8F9;
+}
+
+/* ---------- Buttons ---------- */
+
+body.dark-mode .btn-outline-primary{
+    color:#93C5FD;
+    border-color:#93C5FD;
+}
+
+body.dark-mode .btn-outline-primary:hover{
+    background:#06B6D4;
+    color:#FFFFFF;
+}
+
+body.dark-mode .btn-light{
+    background:#FFFFFF;
+    color:#0F172A;
+}
+
+body.dark-mode .btn-outline-light{
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+}
+
+body.dark-mode .btn-outline-light:hover{
+    background:#FFFFFF;
+    color:#0F172A;
+}
+
+/* ---------- List ---------- */
+
+body.dark-mode .list-group-item{
+    background:#1E293B;
+    color:#F8FAFC;
+    border-color:#334155;
+}
+
+/* ---------- HR ---------- */
+
+body.dark-mode hr{
+    border-color:#475569;
+}
+
+/* ---------- Badge ---------- */
+
+body.dark-mode .badge{
+    color:#FFFFFF;
+}
+
+/* ==========================================
+            AUTH PAGE DARK MODE
+========================================== */
+
+.auth-page{
+    background:#F8FAFC;
+}
+
+body.dark-mode .auth-page{
+    background:#16213A;
+}
+
+body.dark-mode .auth-page h1{
+    color:#60A5FA !important;
+}
+
+body.dark-mode .auth-page h3,
+body.dark-mode .auth-page h5,
+body.dark-mode .auth-page p{
+    color:#E2E8F0 !important;
+}
+
+body.dark-mode .auth-page .card{
+    background:#243552;
+}
+
+body.dark-mode .auth-page input::placeholder{
+    color:#CBD5E1 !important;
+}
+
+body.dark-mode .auth-page a{
+    color:#22D3EE;
+}
+
+/* ==========================================
+            GLOBAL TRANSITIONS
+========================================== */
+
+body,
+.navbar,
+.card,
+footer,
+.table,
+.form-control,
+.dropdown-menu,
+.btn{
+    transition:all .3s ease;
+}
+
+/* ==========================================
+        NAVY + CYAN GLOW EFFECTS
+========================================== */
+
+body.dark-mode .card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(34,211,238,.30);
+
+    box-shadow:
+        0 12px 30px rgba(34,211,238,.12),
+        0 0 0 1px rgba(34,211,238,.08);
+
+}
+
+body.dark-mode .btn-primary:hover{
+
+    box-shadow:
+        0 0 10px rgba(34,211,238,.25),
+        0 0 20px rgba(34,211,238,.18);
+
+}
+
+body.dark-mode .btn-outline-primary:hover{
+
+    box-shadow:
+        0 0 12px rgba(34,211,238,.25);
+
+}
+
+body.dark-mode .dropdown-menu{
+
+    box-shadow:
+        0 18px 35px rgba(2,6,23,.35);
+
+}
+
+body.dark-mode .form-control:hover,
+body.dark-mode .form-select:hover{
+
+    border-color:rgba(34,211,238,.35);
+
+}
+
+body.dark-mode .list-group-item:hover{
+
+    background:#2E456A;
+
+}
+
+/* ==========================================
+          CUSTOM SCROLLBAR
+========================================== */
+
+body.dark-mode::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+body.dark-mode::-webkit-scrollbar-track{
+
+    background:#16213A;
+
+}
+
+body.dark-mode::-webkit-scrollbar-thumb{
+
+    background:#22D3EE;
+
+    border-radius:20px;
+
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover{
+
+    background:#67E8F9;
+
+}

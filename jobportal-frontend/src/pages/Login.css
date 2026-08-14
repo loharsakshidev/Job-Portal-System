@@ -1,0 +1,126 @@
+/* ==========================================
+                AUTH PAGES
+========================================== */
+
+/* Login / Register Card */
+
+.login-card{
+    margin-top:30px;
+
+    border-radius:20px;
+
+    animation:fadeUp .5s ease;
+}
+
+/* Form Controls */
+
+.form-control{
+
+    height:55px;
+
+    padding:12px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:0 12px 12px 0;
+
+}
+
+.form-control:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:none;
+
+}
+
+/* Input Group */
+
+.input-group-text{
+
+    background:#fff;
+
+    border-right:none;
+
+    border-radius:12px 0 0 12px;
+
+}
+
+/* Buttons */
+
+.btn-primary{
+
+    background:#2563EB;
+
+    border:none;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+.login-btn{
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#2563EB;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.3);
+
+}
+
+/* Cards */
+
+.card{
+
+    animation:fadeUp .5s ease;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.10)!important;
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}

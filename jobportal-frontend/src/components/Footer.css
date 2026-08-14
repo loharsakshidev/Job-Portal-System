@@ -1,0 +1,124 @@
+/* ================= FOOTER ================= */
+
+.footer-custom{
+
+    background:#1E3A8A;
+    color:#E2E8F0;
+    padding:35px 0 15px;
+
+    margin-top:70px;
+}
+
+
+.footer-logo{
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.footer-logo span{
+
+    color:#3B82F6;
+
+}
+
+.footer-custom h6{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.footer-custom a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    line-height:2;
+
+}
+
+.footer-custom a:hover{
+
+    color:#3B82F6;
+
+}
+
+.footer-custom hr{
+
+    border-color:#334155;
+
+    margin:25px 0 15px;
+
+}
+
+/* ==============================
+        Social Icons
+============================== */
+
+.social-icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,0.08);
+
+    color:white;
+
+    font-size:20px;
+
+    text-decoration:none;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+    transition:all .35s ease;
+
+    box-shadow:
+        0 0 8px rgba(56,189,248,.15);
+}
+
+.social-icon:hover{
+
+    color:white;
+
+    background:#06B6D4;
+
+    transform:translateY(-6px) scale(1.1);
+
+    box-shadow:
+        0 0 12px #06B6D4,
+        0 0 25px #06B6D4,
+        0 0 40px rgba(6,182,212,.5);
+
+}
+
+.social-icon svg{
+
+    font-size:20px;
+
+}
+
+.social-icon:hover{
+
+    color:var(--primary);
+
+    background:rgba(6,182,212,.12);
+
+    border-color:var(--primary);
+
+    transform:translateY(-5px) scale(1.08);
+
+    box-shadow:
+        0 0 8px rgba(6,182,212,.35),
+        0 0 18px rgba(6,182,212,.25);
+
+}

@@ -1,0 +1,23 @@
+/* ================= Applied Jobs ================= */
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12)!important;
+}
+
+.badge{
+    padding:10px 18px;
+    border-radius:20px;
+}
+
+.btn-outline-primary{
+    border-radius:50px;
+}
+
+.btn-outline-primary:hover{
+    transform:translateY(-2px);
+}

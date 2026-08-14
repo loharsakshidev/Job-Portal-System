@@ -1,0 +1,398 @@
+
+/* =========================================
+   MANAGE JOBS PAGE
+========================================= */
+
+.manage-jobs-page {
+    padding-bottom: 40px;
+}
+
+/* SEARCH BOX */
+
+.manage-jobs-page .card input {
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.manage-jobs-page .card input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.15);
+}
+
+/* JOB TABLE */
+
+.manage-jobs-page .table {
+    vertical-align: middle;
+}
+
+.manage-jobs-page .table th {
+    white-space: nowrap;
+}
+
+.manage-jobs-page .table td {
+    vertical-align: middle;
+}
+
+.manage-jobs-page .table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.manage-jobs-page .table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* STATUS BADGES */
+
+.manage-jobs-page .badge {
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* ACTION BUTTONS */
+
+.manage-jobs-page .table .btn {
+    white-space: nowrap;
+}
+
+/* =========================================
+   CONFIRMATION POPUP
+========================================= */
+
+.job-popup-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(15, 23, 42, 0.55);
+
+    backdrop-filter: blur(5px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 99999;
+
+    animation: overlayFade 0.2s ease;
+}
+
+/* POPUP CARD */
+
+.job-confirm-popup {
+    width: 430px;
+
+    max-width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 38px 32px 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.20);
+
+    animation: popupScale 0.25s ease;
+}
+
+/* CLOSE POPUP */
+
+.close-popup {
+    border-top: 5px solid #ef4444;
+}
+
+/* REOPEN POPUP */
+
+.reopen-popup {
+    border-top: 5px solid #22c55e;
+}
+
+/* POPUP ICON */
+
+.popup-icon {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 auto 22px;
+
+    font-size: 38px;
+
+    font-weight: 700;
+}
+
+/* RED ICON */
+
+.close-popup .popup-icon {
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    box-shadow:
+        0 0 0 10px #fef2f2;
+}
+
+/* GREEN ICON */
+
+.reopen-popup .popup-icon {
+    background: #dcfce7;
+
+    color: #16a34a;
+
+    box-shadow:
+        0 0 0 10px #f0fdf4;
+}
+
+/* POPUP TITLE */
+
+.job-confirm-popup h3 {
+    font-size: 25px;
+
+    font-weight: 700;
+
+    margin-top: 8px;
+
+    margin-bottom: 12px;
+
+    color: #1e293b;
+}
+
+/* POPUP MESSAGE */
+
+.popup-message {
+    color: #64748b;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+}
+
+/* JOB NAME */
+
+.popup-job-name {
+    font-size: 17px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    color: #334155;
+
+    word-break: break-word;
+}
+
+/* DESCRIPTION */
+
+.popup-description {
+    font-size: 14px;
+
+    color: #94a3b8;
+
+    line-height: 1.6;
+
+    margin: 0 auto 28px;
+
+    max-width: 350px;
+}
+
+/* POPUP BUTTONS */
+
+.popup-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    justify-content: center;
+}
+
+/* CANCEL BUTTON */
+
+.popup-cancel-btn {
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: 1px solid #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #475569;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.popup-cancel-btn:hover {
+    background: #e2e8f0;
+
+    transform: translateY(-1px);
+}
+
+/* CLOSE BUTTON */
+
+.popup-confirm-close {
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    background: #ef4444;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(239, 68, 68, 0.25);
+
+    transition: all 0.2s ease;
+}
+
+.popup-confirm-close:hover {
+    background: #dc2626;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(239, 68, 68, 0.35);
+}
+
+/* REOPEN BUTTON */
+
+.popup-confirm-reopen {
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    background: #22c55e;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(34, 197, 94, 0.25);
+
+    transition: all 0.2s ease;
+}
+
+.popup-confirm-reopen:hover {
+    background: #16a34a;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(34, 197, 94, 0.35);
+}
+
+/* ANIMATIONS */
+
+@keyframes popupScale {
+
+    from {
+        opacity: 0;
+
+        transform:
+            scale(0.85)
+            translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+    }
+
+}
+
+@keyframes overlayFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .job-confirm-popup {
+        width: 100%;
+
+        padding:
+            32px
+            22px
+            25px;
+
+        border-radius: 20px;
+    }
+
+    .popup-buttons {
+        flex-direction: column;
+    }
+
+    .popup-cancel-btn,
+    .popup-confirm-close,
+    .popup-confirm-reopen {
+        width: 100%;
+    }
+
+    .popup-icon {
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 32px;
+    }
+
+    .job-confirm-popup h3 {
+        font-size: 22px;
+    }
+
+}
+
